@@ -1,3 +1,4 @@
+
 /**********************************************************************
 
 DCC++ BASE STATION
@@ -177,6 +178,8 @@ DCC++ BASE STATION is configured through the Config.h file that contains all use
 #include "EEStore.h"
 #include "Config.h"
 #include "Comm.h"
+
+# include "src/SerialWrapper/SerialWrapper.h"
 
 void showConfiguration();
 

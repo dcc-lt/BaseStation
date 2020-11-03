@@ -1,0 +1,21 @@
+
+# VS Code files
+.vscode/
+
+# Output files
+build/
+
+# arduino-ci files
+/.bundle/
+/.yardoc
+Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+vendor
+*.gem
+.rspec_status
+*.bin
+*.bin.dSYM
