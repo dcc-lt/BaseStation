@@ -1,0 +1,31 @@
+platforms:
+  uno-test:
+    board: arduino:avr:uno
+    package: arduino:avr
+    gcc:
+      features:
+      defines:
+        - __AVR_ATmega328P__
+        - ARDUINO_AVR_UNO
+        - ARDUINO_CI_TESTS
+      warnings:
+      flags:
+  mega-test:
+    board: arduino:avr:mega:cpu=atmega2560
+    package: arduino:avr
+    gcc:
+      features:
+      defines:
+        - __AVR_ATmega2560__
+        - ARDUINO_AVR_MEGA2560
+        - ARDUINO_CI_TESTS
+      warnings:
+      flags:
+
+unittest:
+  platforms:
+    - uno-test
+    # - mega-test
+  exclude_dirs:
+    - build
+    - BaseStation
