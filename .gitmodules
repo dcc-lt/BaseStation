@@ -1,0 +1,3 @@
+[submodule "lib/arduino-mock"]
+	path = lib/arduino-mock
+	url = ../arduino-mock.git
